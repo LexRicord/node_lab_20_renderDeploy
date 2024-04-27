@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000; /* Черный текст */
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto; /* Центрирование body */
+    max-width: 1200px; /* Максимальная ширина body */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Серый или белый фон */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    color: #ff4d4d; /* Красный текст */
+}
+
+.menu * {
+    width: 100%;
+}
+
+.elemString {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 5px auto;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    background-color: #fff; /* Белый фон */
+}
+
+.elemString:hover {
+    border: 1px solid #ff4d4d; /* Подсветка красным при наведении */
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #e0e0e0; /* Светло-серый */
+}
+
+.elem {
+    flex: content;
+}
+
+button {
+    border: 1px solid #ccc;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #0066ff; /* Темно-синяя */
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+button:hover {
+    border: 2px solid #ff4d4d; /* Увеличение толщины бордера и подсветка красным при наведении */
+    margin: 5px auto;
+    padding: 9px; /* Уменьшение размера кнопки, чтобы учесть увеличение толщины бордера */
+    background-color: #ff3333; /* Ярко-красная */
+}
+
+#BTNsubm {
+    background-color: #009933; /* Зеленая */
+    color: white;
+}
+
+#delBTN {
+    background-color: #ff3333; /* Ярко-красная */
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #4d4d4d; /* Темно-серая */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.disabled-button {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+ul {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.elemString, button, ul {
+    max-width: 600px; /* Максимальная ширина элементов */
+}
